@@ -16,3 +16,7 @@ def about():
 @app.route('/data', methods=['GET'])
 def get_data():
     return "Oto dane!"
+
+@app.route('/data', methods=['POST'])
+def post_data():
+    return "Dane zostały zapisane!"
