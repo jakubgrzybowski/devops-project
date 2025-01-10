@@ -12,3 +12,7 @@ if __name__ == '__main__':
 @app.route('/about')
 def about():
     return "To jest strona 'O nas'."
+
+@app.route('/data', methods=['GET'])
+def get_data():
+    return "Oto dane!"
