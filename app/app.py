@@ -6,9 +6,6 @@ app = Flask(__name__)
 def home():
     return "Witaj w aplikacji DevOps!"
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
 @app.route('/about')
 def about():
     return "To jest strona 'O nas'."
@@ -20,3 +17,7 @@ def get_data():
 @app.route('/data', methods=['POST'])
 def post_data():
     return "Dane zostały zapisane!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
